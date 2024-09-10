@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XN Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-4">XN Search</h1>
+        
+        <form action="/search" method="POST" class="flex justify-center mb-4">
+            <input type="text" name="title" placeholder="Masukkan judul" class="p-2 w-1/2 rounded-l bg-gray-800 text-white border border-gray-700">
+            <button type="submit" class="p-2 bg-blue-500 text-white rounded-r">Cari</button>
+        </form>
+        
+        <form action="/info" method="POST" class="flex justify-center mb-4">
+            <input type="text" name="url" placeholder="Masukkan Url" class="p-2 w-1/2 rounded-l bg-gray-800 text-white border border-gray-700">
+            <button type="submit" class="p-2 bg-blue-500 text-white rounded-r">Info</button>
+        </form>
+        
+        <div id="results">
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+        </div>
+    </div>
+</body>
+</html>
